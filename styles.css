@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 ;
+    height:100vh; 
+    background-color: #f3eae3; 
+}
+.card{
+    width:50vw;
+    height:35vw;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+.card img{
+    width:25vw;
+    height:100%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    flex: 0 0 50%;
+}
+.content .head{
+    margin-left:1vw;
+    font-family: montserrat;
+    letter-spacing: 0.4vw;
+    font-weight: 500;
+    font-size: 0.5em;
+    margin-top: 2.5vw;
+    color:#828387;
+
+}
+.content .name{
+    font-family: fraunces;
+    width:20vw;
+    margin-left: 1vw;
+    font-size: larger;
+    font-weight:600;
+    margin-top: -0.1vw;
+}
