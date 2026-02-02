@@ -8,7 +8,6 @@ body{
 }
 .card{
     width:50vw;
-    height:35vw;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -18,14 +17,13 @@ body{
     height:100%;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
-    flex: 0 0 50%;
 }
 .content .head{
-    margin-left:1vw;
+    margin-left:1.5vw;
     font-family: montserrat;
     letter-spacing: 0.4vw;
     font-weight: 500;
-    font-size: 0.5em;
+    font-size: 1.3vw;
     margin-top: 2.5vw;
     color:#828387;
 
@@ -33,8 +31,121 @@ body{
 .content .name{
     font-family: fraunces;
     width:20vw;
-    margin-left: 1vw;
-    font-size: larger;
+    margin-left: 1.5vw;
+    font-size: 2.7vw;
     font-weight:600;
     margin-top: -0.1vw;
+}
+.content .desc{
+    font-size:1.4vw;
+    font-family: montserrat;
+    line-height: 2.1vw;
+    width:90%;
+    margin-left:1.5vw;
+    margin-top:-1.2vw;
+    opacity:75%;
+}
+.price{
+    font-family: fraunces;
+    color:#3f7662;
+    font-size:3.2vw;
+    margin-left:1.5vw;
+    margin-top: -0.1vw;
+    font-weight: 600;
+}
+.price span{
+    font-size:1.2vw;
+    position: relative;
+    top:-0.6vw;
+    left:1vw;
+    color:black;
+    opacity:60%;
+    font-family: montserrat;
+    font-weight:500;
+}
+button {
+    display: flex;
+    align-items: center;   /* vertically center image + text */
+    justify-content: center; /* optional */
+    padding: 5px 10px;     /* control button size */
+    border: none;
+    background-color: #3f7662;
+    color: white;
+    font-size: 14px;
+    width:80%;
+    margin-left: 1.5vw;
+    font-size: 1.3vw;
+    height:4vw;
+    font-weight:600;
+    font-family: montserrat;
+    border-radius: 5px;
+    margin-top: -1.5vw;
+
+}
+
+button .cart {
+    width: 1.5vw;           /* your desired width */
+    height: 1.5vw;          /* your desired height */
+    margin-right:0.5vw;
+    object-fit: contain;   /* prevents stretching */
+}
+button:active{
+    background-color: #1a4031;
+}
+@media (max-width:600px){
+    
+    .card{
+        width:90vw;
+        flex-direction: column;
+        margin-top:10vw;
+        padding-bottom: 4vw;
+    }
+    .card .pimage{
+        width:90vw;
+        height:90vw;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    body{
+        padding-top:20vh;
+        overflow-x: hidden;
+        padding-bottom: 0;
+    }
+    .content .head{
+        font-size:3vw;
+        letter-spacing: 1.5vw;
+        margin-left:5vw;
+        margin-bottom: 5vw;
+    }
+    .content .name{
+        font-size:8.5vw;
+        width:80vw;
+        margin-left:4vw;
+        line-height: 9vw;
+    }
+    .content .desc{
+        font-size: 3.9vw;
+        line-height: 5.2vw;
+        width:70vw;
+        margin-left: 5vw;
+        margin-top: -3vw;
+    }
+    .content .price{
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+    .price span{
+        font-size:2.6vw;
+        top:-1vw
+    }
+    button{
+        font-size: 3vw;
+        height:9vw;
+        margin: 0 auto;
+    }
+    button .cart{
+        height:80vw;
+        width:3vw;
+        margin-right: 2vw;
+    }
 }
